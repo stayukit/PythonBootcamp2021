@@ -51,8 +51,8 @@ for wl in wordlist:
 
 ######################################
 
-login='http://www.uncle-machine.com/login/'
-addpage = 'http://www.uncle-machine.com/addproduct/'
+login='http://www.uncle***.com/login/'
+addpage = 'http://www.uncle***.com/addproduct/'
 
 web=webdriver.Chrome()
 web.get(login)
@@ -60,7 +60,7 @@ web.get(login)
 time.sleep(1)
 
 email=web.find_element_by_id('username')
-email.send_keys('j.horn@gmail.com')
+email.send_keys('***@gmail.com')
 time.sleep(1)
 pw=web.find_element_by_id('password')
 pw.send_keys('1234')
