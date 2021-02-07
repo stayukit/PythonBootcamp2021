@@ -4,8 +4,8 @@ from selenium import webdriver
 import wikipedia
 import time
 
-login='http://www.uncle-machine.com/login/'
-addpage = 'http://www.uncle-machine.com/addproduct/'
+login='http://www.uncle**.com/login/'
+addpage = 'http://www.uncle**.com/addproduct/'
 
 web=webdriver.Chrome()
 web.get(login)
@@ -13,13 +13,13 @@ web.get(login)
 time.sleep(1)
 
 email=web.find_element_by_id('username')
-email.send_keys('j.horn@gmail.com')
+email.send_keys('@gmail.com')
 time.sleep(1)
 pw=web.find_element_by_id('password')
-pw.send_keys('1234')
+pw.send_keys('')
 
 '''
-selenium สามารถใช้กดปุ่ม enter ได้โดย
+use selenium to press enter:
 from selenium.webdriver.common.keys import Keys
 pw.send_keys(Keys.RETURN)
 '''
